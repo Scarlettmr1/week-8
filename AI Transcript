@@ -1,0 +1,32 @@
+create a website with all the necessary files for a todo list website.
+
+Here's your todo list website — 3 files, ready to use together:
+
+index.html — structure and layout
+style.css — dark industrial aesthetic with the Bebas Neue + DM Mono font pairing, animated task items, and accent highlights
+app.js — full functionality with localStorage persistence
+
+Features include:
+
+Add tasks (click + button or press Enter)
+Check off tasks to mark them done
+Double-click any task to edit it inline
+Delete individual tasks with the × button
+Filter by All / Active / Done
+Clear all completed tasks at once
+Live stats showing done vs. remaining count
+Tasks persist across page refreshes via localStorage
+
+Just keep all 3 files in the same folder and open index.html in a browser.
+
+can you add a reminder feature?
+
+Now I'll update all three files to add a reminder feature — a bell icon on each task that opens a datetime picker, with browser notifications when the time arrives.Now rewrite `app.js` with the full reminder system:Reminders are now fully wired in. Here's how it works:
+
+**Setting a reminder:** Hover over any task and click the 🔔 bell icon. A modal opens where you can pick a date/time, or use the quick buttons (+15m, +1h, +8h, +1d) to jump ahead from the currently selected time.
+
+**Visual indicators:** Once set, a small `⏰ today 3:00 PM`-style badge appears on the task. It turns red if the reminder time has passed without the task being completed.
+
+**Firing reminders:** When the time hits, you get an in-app toast notification that stays until dismissed. If you've granted browser notification permission (prompted on first load), you'll also get a native OS notification — even if the tab is in the background.
+
+**Removing a reminder:** Open the bell modal and click "remove reminder."
